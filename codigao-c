@@ -1,0 +1,24 @@
+#include <stdio.h> // Biblioteca de entrada e saída
+
+int main(void) { // Função principal
+    float nota1, nota2, media; // Declaração das variáveis
+
+    // Entrada das notas
+    printf("Digite a primeira nota: ");
+    scanf("%f", &nota1);
+
+    printf("Digite a segunda nota: ");
+    scanf("%f", &nota2);
+
+    // Processamento: cálculo da média
+    media = (nota1 + nota2) / 2;
+
+    // Decisão: verifica se o estudante foi aprovado
+    if (media >= 6.0) {
+        printf("Media: %.1f - Aprovado\n", media); // Saída
+    } else {
+        printf("Media: %.1f - Reprovado\n", media); // Saída
+    }
+
+    return 0; // Encerramento do programa
+}
